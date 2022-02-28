@@ -3,9 +3,12 @@
   font-size: 60px;
 }
 
-.row{
+.main-container{
   height: 100px;
   width: 400px;
+  display: grid;
+  grid-template-rows: auto;
+  /* grid-template-columns: 25%; */
 }
 
 .displayed-result{
@@ -25,23 +28,39 @@ button{
 }
 
 .four-item-row{
-  display: flex;
-}
-
-.four-item-row > button{
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: stretch;
 }
 
 .row2{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: stretch;
 }
 
-.row2 > button{
+.row6{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: stretch;
+}
+
+.clear{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.zero{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+/* .row2 > button{
   flex-grow: 1;
 }
 
 .row2 .clear{
   flex-grow: 3;
-}
+} */
 
-
+ */
