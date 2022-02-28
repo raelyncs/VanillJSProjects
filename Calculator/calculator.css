@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+  font-size: 60px;
+}
+
+.row{
+  height: 100px;
+  width: 400px;
+}
+
+.displayed-result{
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 5px;
+}
+
+button{
+  border: 1px black solid;
+}
+
+.operand{
+  background-color: orange;
+  color: white;
+}
+
+.four-item-row{
+  display: flex;
+}
+
+.four-item-row > button{
+  flex-grow: 1;
+}
+
+.row2{
+  display: flex;
+}
+
+.row2 > button{
+  flex-grow: 1;
+}
+
+.row2 .clear{
+  flex-grow: 3;
+}
+
+

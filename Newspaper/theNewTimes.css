@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  padding: 10px;
+}
+
+.row1{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row2{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  border: 1px black solid;
+  height: inherit;
+}
+
+/* .article{
+
+} */
+
+.article-title{
+  text-align: center;
+}
+
+.nav-container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.politics{
+  flex:1;
+  background-color:yellow;
+}
+.technology{
+  flex:2;
+  background-color: blue;
+}
+.local{
+  flex:3;
+  background-color: greenyellow;
+}
+.opinion{
+  flex:4;
+  background-color: skyblue;
+}
+.sports{
+  flex:5;
+  background-color: purple;
+}
+
