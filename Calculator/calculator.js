@@ -4,8 +4,9 @@ var result = "";
 var displayedResult = document.querySelector(".displayed-result")
 var numbers = document.querySelectorAll(".number");
 var operands = document.querySelectorAll(".operand");
-var clearBtn = document.querySelector(".clear")
-var backBtn = document.querySelector(".backspace")
+var clearBtn = document.querySelector(".clear");
+var backBtn = document.querySelector(".backspace");
+var allBtns = document.querySelectorAll("button");
 var inputNums = [];
 var operation = "";
 
@@ -74,6 +75,16 @@ function activateButtons(){
 
   // backspace
   backBtn.addEventListener("click", backspace);
+
+  // hover affect
+  // for(var i = 0; i < allBtns.length; i++){
+  //   allBtns[i].addEventListener("mouseover", function(event){
+  //     event.target.style.backgroundColor = "purple";
+  //   });
+  //   allBtns[i].addEventListener("mouseout", function(event){
+  //     event.target.style.backgroundColor = "purple";
+  //   })
+  // };
 
 }
 

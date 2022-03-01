@@ -1,15 +1,19 @@
 *{
 	box-sizing: border-box;
-  font-size: 60px;
+  font-size: 50px;
 }
 
-.main-container{
+.row{
+  width: 400px;
+  height: 100px;
+}
+
+/* .main-container{
   height: 100px;
   width: 400px;
   display: grid;
   grid-template-rows: auto;
-  /* grid-template-columns: 25%; */
-}
+} */
 
 .displayed-result{
   background-color: black;
@@ -22,27 +26,32 @@ button{
   border: 1px black solid;
 }
 
+.clear, .number, .backspace{
+  background-color: rgb(216, 217, 219);
+}
+
+.clear:hover, .number:hover, .backspace:hover{
+  background-color: rgb(245,245,245)
+}
+
+.operand:hover{
+  background-color: rgb(255,200,124);
+}
+
 .operand{
   background-color: orange;
   color: white;
 }
 
-.four-item-row{
+.row{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: stretch;
 }
 
-.row2{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: stretch;
-}
-
-.row6{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: stretch;
+.displayed-result{
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .clear{
@@ -54,13 +63,3 @@ button{
   grid-column-start: 1;
   grid-column-end: 4;
 }
-
-/* .row2 > button{
-  flex-grow: 1;
-}
-
-.row2 .clear{
-  flex-grow: 3;
-} */
-
- */
