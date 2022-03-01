@@ -1,5 +1,5 @@
 var num = "";
-var currentOperand = "";
+var previousOperand = "";
 var result = "";
 var displayedResult = document.querySelector(".displayed-result")
 var numbers = document.querySelectorAll(".number");
@@ -46,20 +46,21 @@ function activateButtons() {
 }
 
 
+// this function needs work: issues arise when using "equals" operand
 function runOperation(operand) {
   inputNums.push(num);
   num = "";
   if (inputNums.length === 2) {
-    console.log("more than 2 inputs before calc", inputNums, currentOperand)
+    console.log("more than 2 inputs before calc", inputNums, previousOperand)
     var num1 = parseInt(inputNums.shift());
     var num2 = parseInt(inputNums.shift());
-    if (currentOperand === "+") {
+    if (previousOperand === "+") {
       result = num1 + num2;
-    } else if (currentOperand === "-") {
+    } else if (previousOperand === "-") {
       result = num1 - num2;
-    } else if (currentOperand === "x") {
+    } else if (previousOperand === "x") {
       result = num1 * num2;
-    } else if (currentOperand === "÷") {
+    } else if (previousOperand === "÷") {
       result = num1 / num2;
     } else {
       console.log("EQUALS =")
@@ -67,7 +68,7 @@ function runOperation(operand) {
     displayedResult.innerText = result;
     inputNums.push(result);
   }
-  currentOperand = operand;
+  previousOperand = operand;
 }
 
 function clear() {

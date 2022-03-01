@@ -23,12 +23,21 @@ button{
   background-color: rgb(216, 217, 219);
 }
 
+.clear:active, .number:active, .backspace:active{
+  background-color: rgb(128, 128, 128);
+
+}
+
 .clear:hover, .number:hover, .backspace:hover{
   background-color: rgb(245,245,245)
 }
 
 .operand:hover{
   background-color: rgb(255,200,124);
+}
+
+.operand:active{
+  background-color: rgb(250, 146, 1);
 }
 
 .operand{
